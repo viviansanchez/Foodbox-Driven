@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodBox</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="topo">
+        <h1>FoodBox</h1>
+        <h2>Monte seu box em 15 minutos!</h2>
+    </div>
+    
+    <h3>Primeiro, o seu prato</h3>
+    
+    <div  id="frango" class="produto" onclick="escolherFrango()">
+        <img src="https://img.elo7.com.br/product/original/22565B3/adesivo-parede-prato-comida-frango-salada-restaurante-lindo-adesivo-parede.jpg" alt="Foto de um prato de frango com salada e batata frita">
+        <h4>Frango Ying-Yang</h4>
+        <p>Um pouco de batata, um pouco de salada</p>
+        <p class="preco">R$19,90</p>
+    </div>
+    <div  id="carne" class="produto" onclick="escolherCarne()">
+        <img src="https://www.gazetadigital.com.br/uploads/webdisco/2017/07/13/jpg/original/31fa3f7e4e4aa073b1b455901ba60c82.jpg" alt="Foto de um prato de carne com salada">
+        <h4>Carne e salada</h4>
+        <p>Partida ao meio pra parecer mais carne</p>
+        <p class="preco">R$24,90</p>
+    </div>
+
+    <h3>Agora, sua bebida</h3>
+    <div  id="coca"  class="produto" onclick="escolherCoca()">
+        <img src="https://veja.abril.com.br/wp-content/uploads/2017/07/cocacola_350ml_3latas.jpg" alt="Foto de três latas de Coca-Cola nos sabores Normal, Zero e Stevia">
+        <h4>Coca-Cola gelada</h4>
+        <p>Normal, zero ou stevia. Vai na sorte</p>
+        <p class="preco">R$5,90</p>
+    </div>
+    <div  id="refresco" class="produto" onclick="escolherRefresco()">
+        <img src="https://st.depositphotos.com/1029434/4296/i/600/depositphotos_42963157-stock-photo-fresh-ice-cold-water-in.jpg" alt="Foto de três copos de refresco com sabores distintos">
+        <h4>Refresco</h4>
+        <p>Podia ser suco, mas leva água</p>
+        <p class="preco">R$3,90</p>
+    </div>
+
+
+    <h3>Por fim, sua sobremesa</h3>
+    <div id="pudim" class="produto" onclick="escolherPudim()">
+        <img src="https://img.itdg.com.br/tdg/images/recipes/000/031/593/318825/318825_original.jpg?mode=crop&width=710&height=400" alt="Foto de um pudim">
+        <h4>Pudim</h4>
+        <p>Apenas um lindo e brilhante pudim</p>
+        <p class="preco">R$7,90</p>
+    </div>
+    <div id="sorvete" class="produto" onclick="escolherSorvete()">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgpUs_JYtgL5KUgXUngxFXZUp4p1G5Z9VbtQ&usqp=CAU" alt="Foto de um sorvete com 3 bolas de sabores distintos">
+        <h4>Sorvete bem gelado</h4>
+        <p>Três bolinhas como na foto</p>
+        <p class="preco">R$6,90</p>
+    </div>
+    <div class="botao" onclick="finalizarPedido()">
+        Finalizar pedido
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
